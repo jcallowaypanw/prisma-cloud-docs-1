@@ -12,7 +12,7 @@ As APIs are often accessed by "primitive" automation clients, avoid enabling <<.
 
 === Import API definition from Swagger or OpenAPI files
 
-. Click the *App definition* tab.
+. Go to Defend > WAAS and edit an existing rule or add a new rule.  Click the *App definition* tab.
 +
 image::runtime-security/waas-app-definition.png[]
 
