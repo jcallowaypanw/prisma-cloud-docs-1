@@ -30,6 +30,8 @@ image::runtime-security/host-runtime-rule.png[width=700]
 +
 Prisma Cloud uses xref:../configure/rule-ordering-pattern-matching.adoc[rule order and pattern matching] to determine which rule to apply for each workload.
 +
+NOTE: The Scopes and Collections used for Run Time rules are limited to host attributes for Windows and Linux hosts.  Therefore, for example, it is not possible to change the "Clusters" attribute within a Scope that isintended to be used for Run Time rules.  Additionally, it is not possible to use previously created Collections that do not met these requirements as scopes for Run Tiime rules. 
++
 NOTE: The *Prevent* action for detection of file system events requires a Linux kernel version 4.20 or later.
 
 ==== Anti-malware
