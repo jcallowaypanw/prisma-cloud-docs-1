@@ -46,7 +46,7 @@ The usage of the `twistcli sandbox` command is very similar to running a contain
 
 For example:
 
-   $ sudo twistcli sandbox --address https://<console-address>:8083 --token 'your-api-token' --analysis-duration 2m -v "$PWD":/app python:3 python3 /app/server.py
+   $ sudo twistcli sandbox --address https://<console-address>:8083 --token 'your-api-token' --analysis-duration 2m <image name>
 
 To specify an image to scan, use either the image ID, or repository name and tag.
 The image should be present on the sandbox machine, having either been built or pulled there.
@@ -166,6 +166,8 @@ After `twistcli` dynamically analyzes the image, `twistcli`:
 * Outputs a link to the results report in the Console UI.
 
 The results report in the Console UI includes the analysis summary and verdict, a list of suspicious detections found on the image, and the entire container behavior events that occurred during container runtime.
+
+To view the reults in the Console UI, navigate to Monitor -> Runtime -> and click the "Image Analysis Sandbox" tab:
 
 image::runtime-security/image-sandbox-main-page.png[width=800]
 
